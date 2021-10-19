@@ -1,0 +1,33 @@
+
+# Metadata
+
+Use metadata to store custom information for tagging and labeling back to your internal systems. Must be an object with up to 20 key-value pairs. Keys must be at most 40 characters and values must be at most 500 characters. Neither can contain the characters `"` and `\`. Nested objects are not supported. See [Metadata](#section/Metadata) for more information.
+
+## Structure
+
+`Metadata`
+
+## Fields
+
+| Name | Type | Tags | Description | Getter | Setter |
+|  --- | --- | --- | --- | --- | --- |
+| `Metadata` | `Object` | Optional | - | Object getMetadata() | setMetadata(Object metadata) |
+
+## Example (as JSON)
+
+```json
+{
+  "type": "object",
+  "properties": {
+    "customer_id": {
+      "type": "string",
+      "example": "987654"
+    },
+    "campaign": {
+      "type": "string",
+      "example": "NEWYORK2015"
+    }
+  }
+}
+```
+
